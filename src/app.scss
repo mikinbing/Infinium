@@ -1,0 +1,6 @@
+@import "_variables.scss";
+
+body{
+	color: $purple;
+	@include crossBrowser(background, url(./any.jpg) no-repeat center center fixed);
+}
