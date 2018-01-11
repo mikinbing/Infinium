@@ -1,21 +1,23 @@
 import {Router, RouterConfiguration, RouteConfig} from 'aurelia-router';
+import {PLATFORM} from 'aurelia-pal';
 
 export class Routes 
 {
 	
 	private routeArray: Array<RouteConfig>				= null;
 	private static instance: Routes						= null;
-
-	private constructor() 
+	public constructor() 
 	{
 		this.initializeRoutes();
+		PLATFORM.moduleName('resources/pages/home/home');
+		PLATFORM.moduleName('resources/pages/projects/projects');
 	}
 
 	private initializeRoutes()
 	{
 		this.routeArray 								= [
-		{ route: '', moduleId: './pages/home/home',	name: 'home', title: 'Home'},
-		{ route: 'projects/:name', moduleId: '../pages/projects/projects', name: 'project', title: 'Projects'}
+		{ route: '', moduleId: 'resources/pages/home/home',	name: 'home', title: 'Home'},
+		{ route: 'projects/:name', moduleId: 'resources/pages/projects/projects', name: 'project', title: 'Projects'}
 		];
 	}
 
