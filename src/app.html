@@ -4,11 +4,11 @@
 
 	<router-view class="col-md-12"></router-view>
 	<footer>
-		<nav class="navbar navbar-degfault navbar-fixed-bottom" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">
+				<a repeat.for="route of getRouteArray()" href="${route.name}" class="navbar-brand" >
 					<i class="fa fa-user">
-						<span>Something Generic</span>
+						<span>${route.title}</span>
 					</i>
 				</a>
 			</div>
