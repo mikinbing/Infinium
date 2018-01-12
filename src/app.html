@@ -1,3 +1,17 @@
 <template>
-  <h1>${message}</h1>
+	<require from="bootstrap/dist/css/bootstrap.css"></require>
+	<require from="./app.scss"></require>
+
+	<router-view class="col-md-12"></router-view>
+	<footer>
+		<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+			<div class="navbar-header">
+				<a repeat.for="route of getRouteArray()" href="${route.name}" class="navbar-brand" >
+					<i class="fa fa-user">
+						<span>${route.title}</span>
+					</i>
+				</a>
+			</div>
+		</nav>
+	</footer>
 </template>

@@ -1,0 +1,9 @@
+$purple: rgb(128,0,128);
+
+@mixin crossBrowser($property, $css){
+	-webkit-#{$property}: $css;
+	-moz-#{$property}: $css;
+	-ms-#{$property}: $css;
+	-o-#{$property}: $css;
+	#{$property}: $css;
+}

@@ -97,6 +97,10 @@ module.exports = ({production, server, extractCss, coverage} = {}) => ({
     new ProvidePlugin({
       'Promise': 'bluebird'
     }),
+    new ProvidePlugin({
+      $: "jquery", 
+      jQuery: "jquery", 
+    }),
     new ModuleDependenciesPlugin({
       'aurelia-testing': [ './compile-spy', './view-spy' ]
     }),
