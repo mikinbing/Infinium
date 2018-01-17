@@ -12,8 +12,9 @@ export class Routes
 		this.initializeRoutes();
 		PLATFORM.moduleName('resources/pages/home/home');
 		PLATFORM.moduleName('resources/pages/projects/projects');
-		PLATFORM.moduleName('resources/pages/about/about');
+		PLATFORM.moduleName('resources/pages/services/services');
 		PLATFORM.moduleName('resources/pages/contact/contact');
+		PLATFORM.moduleName('resources/pages/quotes/quotes');
 	}
 
 	private initializeRoutes()
@@ -21,8 +22,9 @@ export class Routes
 		this.routeArray 								= [
 		{ route: ['', 'home'], 	moduleId: 'resources/pages/home/home',			name: 'home', 		title: 'Home'},
 		{ route: 'projects', 	moduleId: 'resources/pages/projects/projects', 	name: 'projects', 	title: 'Projects'},
-		{ route: 'about',		moduleId: 'resources/pages/about/about',		name: 'about',		title: 'About'},
-		{ route: 'contact',		moduleId: 'resources/pages/contact/contact',	name: 'contact',	title: 'Contact Us'}
+		{ route: 'services',	moduleId: 'resources/pages/services/services',	name: 'services',	title: 'Services'},
+		{ route: 'contact',		moduleId: 'resources/pages/contact/contact',	name: 'contact',	title: 'Contact Us'},
+		{ route: 'quotes', 		moduleId: 'resources/pages/quotes/quotes',		name: 'quotes', 	title: 'Quotes'}
 		];
 	}
 
