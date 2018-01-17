@@ -6,7 +6,7 @@ export class App
 	private router: Router;
 	private routeArray: Array<RouteConfig>;
 
-	private constructor()
+	public constructor()
 	{
 		this.initializeRoutes();
 	}
