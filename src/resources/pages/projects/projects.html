@@ -1,6 +1,64 @@
 <template>
 	<require from="./projects.scss"></require>
 	<div class="page-projects">
-		<h1>Projects</h1>
+		
+    <div class="container">
+      <div class="row">
+        <!-- Banner -->
+        <div class="col-md-12" id="porfoliobanner">
+  
+          <h2 class="text-left">Need a development team that will go above and beyond? 
+            <small class="text-muted">${heading} is the team you will need.</small>
+          </h2>
+        </div>
+      </div>
+  
+      <!-- projects -->
+      <div class="row">
+        <div repeat.for="project of projects">
+          <div class="col-md-3 projectcontainer">
+            <div class="projecttag">
+              <h4 class="text-center">${project.projectName}</h4>
+              <h5 class="text-center">${project.projectCompletion}</h5>
+            </div>
+            <a href.bind="project.projectUrl"  target="_blank" >
+              <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300"  alt="movers"></a>
+            </div>
+        </div>
+      </div>
+   
+      <!-- end place holder -->
+      
+     
+      <!-- end projects -->
+       
+     <!-- form allows to update a project on the page, possible addition to admin page?-->
+      
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <form role="form" submit.delegate="addProject()">
+                  <div class="form-group">
+                    <label for="pn">Project Name</label>
+                    <input type="text" class="form-control" id="pn" value.bind="projectName"  placeholder="first name">
+                  </div> 
+                  <div class="form-group">
+                    <label for="cdate">Date</label>
+                    <input type="date" class="form-control" id="cdate" value.bind="projectCompletion" placeholder="Completiondate" >
+                  </div>
+                  <div class="form-group">
+                    <label for="url">Url</label> 
+                    <input type="url" class="form-control" id="url" value.bind="projectUrl" placeholder="URL">
+                  </div>
+                  <div class="form group">
+                    <label for="imgsrc">Image source</label> 
+                    <input type="text" class="form-control" id="imgsrc" value.bind="projectSrc" placeholder="Image Path">
+                  </div>
+                  <button   type="submit" class="btn btn-default">Add Project</button>
+                </form>
+              </div>
+        </div> -->
+  
+      <!-- end form -->  
+    </div>
 	</div>
 </template>
