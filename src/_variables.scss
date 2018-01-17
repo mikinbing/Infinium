@@ -1,4 +1,9 @@
-$purple: rgb(128,0,128);
+$main-blue: rgb(75,30,255);
+$dark-blue: rgb(29,0,150);
+$darker-blue: rgb(23,0,115);
+$light-blue: rgb(154,129,255);
+$lighter-blue: rgb(190,175,255);
+$bg-gray: rgb(156,156,156);
 
 @mixin crossBrowser($property, $css){
 	-webkit-#{$property}: $css;

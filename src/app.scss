@@ -1,6 +1,29 @@
 @import "_variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Roboto');
 
 body{
-	color: $purple;
-	@include crossBrowser(background, url(./any.jpg) no-repeat center center fixed);
+	//@include crossBrowser(background, url(./any.jpg) no-repeat center center fixed);
+	font-family: 'Playfair Display', 'Roboto', 'Open Sans', sans-serif;
+	background-color: rgb(156,156,156);
+	margin: 0 auto;
+}
+
+.navbar{
+	background-color: $dark-blue;
+	border: solid $dark-blue;
+}
+
+@media only screen and (max-width: 370px){
+	
+	//make sure the navbar elements dont stack
+	.navbar-brand{
+
+		font-size: 15px;
+		padding: 10px 10px;
+	}
+}
+
+//after 768px start using the video as the background
+@media only screen and (max-width: 768px){
+
 }
