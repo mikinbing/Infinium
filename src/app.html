@@ -10,8 +10,8 @@
 			<div class="navbar-header">
 				<a repeat.for="route of getRouteArray()" href="${route.name}" class="navbar-brand" >
 					<!-- have icons only show when the screen width is less than 786px-->
-					<i id="nav-icons" class="fa fa-address-book"></i>
-					<span>${route.title}</span>
+					<i class="nav-icons fa ${route.icon} "></i>
+					<span class="nav-options">${route.title}</span>
 				</a>
 			</div>
 		</nav>

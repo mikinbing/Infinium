@@ -1,4 +1,4 @@
-export class About
+export class Services
 {
 	
 	constructor(argument) 
