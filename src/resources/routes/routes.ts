@@ -11,7 +11,7 @@ export class Routes
 	{
 		this.initializeRoutes();
 		PLATFORM.moduleName('resources/pages/home/home');
-		PLATFORM.moduleName('resources/pages/projects/projects');
+		PLATFORM.moduleName('resources/pages/project/project');
 		PLATFORM.moduleName('resources/pages/about/about');
     PLATFORM.moduleName('resources/pages/contact/contact');
     PLATFORM.moduleName('resources/pages/portfolio/portfolio');

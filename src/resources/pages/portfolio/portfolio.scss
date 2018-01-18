@@ -1,0 +1,28 @@
+.projectcontainer {
+ 
+  width: 400;
+   height: 300; 
+   position: relative;
+  }
+  h4{
+   padding-left: 10px;
+   padding-bottom: 10px;
+  }
+  .projecttag {
+   display:inline-block;
+   /* float: left; */
+   position: absolute;
+   width:250px;
+   height:35px;
+   margin-left: 15%;
+   margin-top: 47%;  
+   background-color: black;
+   color: #FFFFFF;
+   font-weight: bold;
+   overflow: hidden;
+  }
+  .projecttag:hover{
+   height:70px;
+  }
+  
+  
