@@ -1,5 +1,6 @@
 import {ProjectInterface} from '../../interfaces/ProjectInterface/projectInterface';
-
+import { inject } from 'aurelia-framework';
+import { projectList } from '../../models/projectList.json';
 
 export class Project implements ProjectInterface 
 {
@@ -30,6 +31,6 @@ export class Project implements ProjectInterface
 
   }
 
-
+ 
 
 }

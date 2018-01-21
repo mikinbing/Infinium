@@ -1,17 +1,21 @@
+import { Project } from '../../components/project/project';
 import { customElement, bindable, inject } from 'aurelia-framework';
 
-
- import {Project} from '../project/project';
-
  @inject(Project)
-export class Portfolio extends Project
+export class Portfolio 
 {
-  heading = 'Infinium';
-  projects : Project[] = [];
+  projects =[];
+  projectId;
 
-	
+  constructor(private project:Project) { }
+ 
+  created() 
+  {
+    //set projects array equal to the return value of getProjectList()
   
 
   // click action event when clicked will tell you where to go 
+  
   // project
-}
+  }
+};
