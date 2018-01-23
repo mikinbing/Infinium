@@ -1,0 +1,14 @@
+<template>
+	<require from="./services.scss"></require>
+	<div class="page-services text-center">
+		<h1 class="h1">Services</h1>
+
+		<section class="container">
+			<div class="row" repeat.for="row of servicesList">
+				<div class="col-md-4" repeat.for="service of row">
+					${service}
+				</div>
+			</div>
+		</section>
+	</div>
+</template>
